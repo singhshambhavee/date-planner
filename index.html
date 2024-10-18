@@ -71,6 +71,10 @@
             </div>
 
            <button type="button" id="are-you-sure">Are You Sure?</button>
+
+            <button type="button" onclick="submitForm()">Submit Answer</button>
+        </form>
+    </div>
  <script>
         // Get the "Are You Sure?" button
         const areYouSureButton = document.getElementById('are-you-sure');
@@ -88,10 +92,6 @@
             alert(`You selected: ${answers.join(', ') }`);
         });
     </script>
-
-            <button type="button" onclick="submitForm()">Submit Answer</button>
-        </form>
-    </div>
 
     <script src="script.js"></script> <!-- Link to script.js file -->
 </body>
