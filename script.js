@@ -2,12 +2,12 @@
 
 function randomAnswer(questionId) {
     const answers = {
-        question1: ["The Notebook", "Pride and Prejudice", "Titanic"],
-        question2: ["Candlelight Dinner", "Beach Walk", "Movie Night"],
-        question3: ["Perfect", "All of Me", "I Will Always Love You"],
-        question4: ["Paris", "Venice", "Santorini"],
-        question5: ["Stargazing", "Picnic", "Dancing"],
-        question6: ["Love conquers all.", "You had me at hello.", "To love and be loved is to feel the sun from both sides."]
+        question1: ["sushi", "pasta", "pizza", "burger", "ramen", "tacos", "chicken", "momo", "noodles"],
+        question2: ["movie", "beach", "museum", "event", "escape", "bowling", "painting", "park"],
+        question3: ["time", "letter", "sun", "book", "trip", "stargazing", "drive", "magic", "photo"],
+        question4: ["floral", "shiny", "pearl", "cocktail", "vintage", "cultural"],
+        question5: ["afternoon", "evening", "night", "early"],
+        question6: ["jewellery", "makeup", "perfume", "teddy", "chocolate", "dress"]
     };
 
     // Get the dropdown for the specific question
