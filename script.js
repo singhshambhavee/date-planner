@@ -1,3 +1,5 @@
+// script.js
+
 function randomAnswer(questionId) {
     const answers = {
         question1: ["The Notebook", "Pride and Prejudice", "Titanic"],
