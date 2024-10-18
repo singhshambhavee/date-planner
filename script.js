@@ -21,10 +21,8 @@ areYouSureButton.addEventListener('click', () => {
     alert(`You selected:\n${answers.join('\n')}`);
 });
 
-// Add event listener to the form submission
-document.getElementById('questionnaire').addEventListener('submit', (e) => {
-    e.preventDefault(); // Prevent default form submission
-
+// Add event listener to the feedback button
+document.getElementById('feedback-btn').addEventListener('click', () => {
     // Redirect to the Google Form
     window.location.href = 'https://docs.google.com/forms/d/1ZQiMsY62Vq4mwzwkM1xpQP4Y6w3yyxqZ2z4hktsRfPA/viewform?pli=1&pli=1&edit_requested=true';
 });
