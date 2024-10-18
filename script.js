@@ -14,17 +14,17 @@ areYouSureButton.addEventListener('click', () => {
     const answers = [];
     const selects = document.querySelectorAll('select');
     selects.forEach((select) => {
-        answers.push(select.value);
+        answers.push(select.options[select.selectedIndex].text);
     });
 
-    // Display selected answers in an alert or console
-    alert(`You selected: ${answers.join(', ') }`);
+    // Display selected answers in an alert
+    alert(`You selected:\n${answers.join('\n')}`);
 });
 
 // Add event listener to the form submission
 document.getElementById('questionnaire').addEventListener('submit', (e) => {
     e.preventDefault(); // Prevent default form submission
-    // You can add your own form submission handling here
-    // For example, you could send an AJAX request or display a success message
-    alert('Form submitted!');
+
+    // Redirect to the Google Form
+    window.location.href = 'https://docs.google.com/forms/d/1ZQiMsY62Vq4mwzwkM1xpQP4Y6w3yyxqZ2z4hktsRfPA/viewform?pli=1&pli=1&edit_requested=true';
 });
