@@ -5,7 +5,7 @@ function randomAnswer(questionId) {
         question1: ["sushi", "pasta", "pizza", "burger", "ramen", "tacos", "chicken", "momo", "noodles"],
         question2: ["movie", "beach", "museum", "event", "escape", "bowling", "painting", "park"],
         question3: ["time", "letter", "sun", "book", "trip", "stargazing", "drive", "magic", "photo"],
-        question4: ["floral", "shiny", "pearl", "cocktail", "vintage", "cultural"],
+        question4: ["Floral", "Shiny", "pearl", "cocktail", "vintage", "cultural"],
         question5: ["Afternoon", "Evening", "Night", "Early Morning"],
         question6: ["jewellery", "makeup", "perfume", "teddy", "chocolate", "dress"]
     };
