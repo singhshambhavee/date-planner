@@ -53,3 +53,20 @@ button {
 button:hover {
     background-color: #d62839; /* Darker red on hover */
 }
+
+a.button {
+    display: inline-block;
+    background-color: #e63946; /* Romantic red color */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none; /* Remove underline */
+    text-align: center;
+}
+
+a.button:hover {
+    background-color: #d62839; /* Darker red on hover */
+}
