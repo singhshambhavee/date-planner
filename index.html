@@ -3,24 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Date Planner</title>
+    <title>Love Themed Questionnaire</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Plan Your Perfect Date</h1>
-    <div id="questions">
-        <div class="question" id="question1"></div>
-        <div class="question" id="question2"></div>
-        <div class="question" id="question3"></div>
-        <div class="question" id="question4"></div>
+    <div class="container">
+        <h1>Love Themed Questionnaire</h1>
+        <form id="questionnaire">
+            <div class="question">
+                <label for="question1">What is your favorite romantic movie?</label>
+                <select id="question1">
+                    <option value="The Notebook">The Notebook</option>
+                    <option value="Pride and Prejudice">Pride and Prejudice</option>
+                    <option value="Titanic">Titanic</option>
+                </select>
+                <button type="button" onclick="randomAnswer('question1')">Decide for me</button>
+            </div>
+
+            <div class="question">
+                <label for="question2">What is your ideal date?</label>
+                <select id="question2">
+                    <option value="Candlelight Dinner">Candlelight Dinner</option>
+                    <option value="Beach Walk">Beach Walk</option>
+                    <option value="Movie Night">Movie Night</option>
+                </select>
+                <button type="button" onclick="randomAnswer('question2')">Decide for me</button>
+            </div>
+
+            <div class="question">
+                <label for="question3">What is your favorite love song?</label>
+                <select id="question3">
+                    <option value="Perfect">Perfect</option>
+                    <option value="All of Me">All of Me</option>
+                    <option value="I Will Always Love You">I Will Always Love You</option>
+                </select>
+                <button type="button" onclick="randomAnswer('question3')">Decide for me</button>
+            </div>
+
+            <div class="question">
+                <label for="question4">What is your favorite romantic destination?</label>
+                <select id="question4">
+                    <option value="Paris">Paris</option>
+                    <option value="Venice">Venice</option>
+                    <option value="Santorini">Santorini</option>
+                </select>
+                <button type="button" onclick="randomAnswer('question4')">Decide for me</button>
+            </div>
+
+            <div class="question">
+                <label for="question5">What is your favorite romantic activity?</label>
+                <select id="question5">
+                    <option value="Stargazing">Stargazing</option>
+                    <option value="Picnic">Picnic</option>
+                    <option value="Dancing">Dancing</option>
+                </select>
+                <button type="button" onclick="randomAnswer('question5')">Decide for me</button>
+            </div>
+
+            <div class="question">
+                <label for="question6">What is your favorite love quote?</label>
+                <select id="question6">
+                    <option value="Love conquers all.">Love conquers all.</option>
+                    <option value="You had me at hello.">You had me at hello.</option>
+                    <option value="To love and be loved is to feel the sun from both sides.">To love and be loved is to feel the sun from both sides.</option>
+                </select>
+                <button type="button" onclick="randomAnswer('question6')">Decide for me</button>
+            </div>
+
+            <button type="button" onclick="submitForm()">Submit Answer</button>
+        </form>
     </div>
-    <button id="submitAnswers">Submit Answers</button>
-    <div id="results"></div>
-    <form id="dataForm">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <button type="submit">Send Data</button>
-    </form>
+
     <script src="script.js"></script>
 </body>
 </html>
