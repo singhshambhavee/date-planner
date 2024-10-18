@@ -20,7 +20,21 @@ function randomAnswer(questionId) {
     // Set the selected answer in the dropdown
     dropdown.value = selectedAnswer;
 }
+// Get the "Are You Sure?" button
+const areYouSureButton = document.getElementById('are-you-sure');
 
+// Add event listener to the "Are You Sure?" button
+areYouSureButton.addEventListener('click', () => {
+    // Get the selected answers
+    const answers = [];
+    const selects = document.querySelectorAll('select');
+    selects.forEach((select) => {
+        answers.push(select.value);
+    });
+
+    // Display selected answers in an alert
+    alert(`You selected: ${answers.join(', ')}`);
+});
 function submitForm() {
     // Redirect to Google Form
     window.location.href = "https://your-google-form-link.com"; // Replace with your actual Google Form link
