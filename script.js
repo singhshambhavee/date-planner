@@ -35,7 +35,4 @@ areYouSureButton.addEventListener('click', () => {
     // Display selected answers in an alert
     alert(`You selected: ${answers.join(', ')}`);
 });
-function submitForm() {
-    // Redirect to Google Form
-    window.location.href = "https://your-google-form-link.com"; // Replace with your actual Google Form link
-}
+
