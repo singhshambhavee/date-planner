@@ -1,25 +1,10 @@
-// script.js
-
 function randomAnswer(questionId) {
-    const answers = {
-        question1: ["sushi", "pasta", "pizza", "burger", "ramen", "tacos", "chicken", "momo", "noodles"],
-        question2: ["movie", "beach", "museum", "event", "escape", "bowling", "painting", "park"],
-        question3: ["time", "letter", "sun", "book", "trip", "stargazing", "drive", "magic", "photo"],
-        question4: ["Floral", "Shiny", "pearl", "cocktail", "vintage", "cultural"],
-        question5: ["Afternoon", "Evening", "Night", "Early Morning"],
-        question6: ["jewellery", "makeup", "perfume", "teddy", "chocolate", "dress"]
-    };
-
-    // Get the dropdown for the specific question
-    const dropdown = document.getElementById(questionId);
-    
-    // Select a random answer from the corresponding array
-    const randomIndex = Math.floor(Math.random() * answers[questionId].length);
-    const selectedAnswer = answers[questionId][randomIndex];
-
-    // Set the selected answer in the dropdown
-    dropdown.value = selectedAnswer;
+    const select = document.getElementById(questionId);
+    const options = select.options;
+    const randomIndex = Math.floor(Math.random() * options.length);
+    select.selectedIndex = randomIndex;
 }
+
 // Get the "Are You Sure?" button
 const areYouSureButton = document.getElementById('are-you-sure');
 
@@ -32,7 +17,14 @@ areYouSureButton.addEventListener('click', () => {
         answers.push(select.value);
     });
 
-    // Display selected answers in an alert
-    alert(`You selected: ${answers.join(', ')}`);
+    // Display selected answers in an alert or console
+    alert(`You selected: ${answers.join(', ') }`);
 });
 
+// Add event listener to the form submission
+document.getElementById('questionnaire').addEventListener('submit', (e) => {
+    e.preventDefault(); // Prevent default form submission
+    // You can add your own form submission handling here
+    // For example, you could send an AJAX request or display a success message
+    alert('Form submitted!');
+});
