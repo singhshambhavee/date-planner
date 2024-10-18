@@ -1,7 +1,9 @@
+/* styles.css */
+
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #ffe6f2; /* Light pink background */
-    color: #333;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light background color */
+    color: #333; /* Dark text color */
     margin: 0;
     padding: 20px;
 }
@@ -9,12 +11,45 @@ body {
 .container {
     max-width: 600px;
     margin: auto;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    background-color: #ffffff; /* White background for the container */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     text-align: center;
-    color: #ff3366; /* Love
+    color: #e63946; /* Romantic red color */
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #e63946; /* Romantic red color */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #d62839; /* Darker red on hover */
+}
